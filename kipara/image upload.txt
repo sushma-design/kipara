@@ -1,0 +1,6 @@
+$fname = $_FILES['f1']['name'];
+$fpath = 'saved_images/';
+move_uploaded_file($_FILES['f1']['tmp_name'], $fpath.$fname);
+$imgpath1 = $fpath.$fname;
+$imagepathnew = 'saved_images/id_'.$name.$number.".jpg";
+rename($imgpath1,$imagepathnew);
